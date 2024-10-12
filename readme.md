@@ -1,4 +1,4 @@
-#Olá, Bem vindo ao meu projeto de portfólio.
+# Olá, Seja Bem vindo ao meu projeto Portfólio.
 
 ![image](/assets/Gravando-portfolio-github.gif)
 
