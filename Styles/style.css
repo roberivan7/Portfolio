@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Guerrilla&display=swap');/*comando utilizado para importar fontes nesse caso foi o google fonts*/
+
+:root {
+    --cor-primaria: #204051;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+
+    --hover-cor-fonte: #EEEEEE;
+    --hover-fundo: rgb(66, 55, 55);
+
+    --fonte-titulo: "Krona one", sans-serif;
+    --fonte-texto: "montserrat", sans-serif;
+
+    /*Rodape*/
+    --cor-fonte-rodape: #f6f6f6;
+    --cor-fundo-rodape: #3B6978;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+padding: 4% 7% 3% 7%; /*o 1° valor seria para o espaçamento do top, o 2° é p/o espaçamento a direita, o 3° para parte inferior e o 4° é para a esquerda siga essa sequencia padrão*/
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    margin: 8% 7% 7% 7%; /*propriedade de editar o tamanho da margem da pagina web, sendo o 1° valor da lateral da pagina e o 2° Valor parte superior*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.apresentacao__conteudo {
+    margin-right: 8%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.apresentacao__titulo__texto {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-titulo);
+    color: var(--titulo);   
+}
+
+.imagem__portfolio{
+    width: 45%;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.375rem;
+    font-family: var(--fonte-texto);
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.apresentacao__subtitulo{
+    font-family: var(--fonte-titulo);
+    font-size: 1.25rem;
+    color: var(--cor-fonte-link);
+}
+
+.apresentacao__links {
+    display: flex; /*tecnologia flexbox, esse comando é utilizado para organiza sua estrutura da pagina web em colunas, uma do lado da outra*/
+    flex-direction: column;
+    justify-content: space-between; /*tecnologia flexbox, esse comando deixar um espaçamento entre estrutaras*/
+    align-items: center; /*Alinha a estrutura da pagina (nesse caso alinhado para o centro da pagina)*/
+    gap: 32px; /* adiciona espaços iguais entre cada quadrado */
+}
+
+.apresentacao__midia {
+    padding: 21.5px 0; /* no comando padding voce precisa inserir duas medidas no um seria para margem d eixo vertical e outro para o eixo horizontal, nesse caso foi inserido um medida para o eixo vertical e um no eixo vertical como nessa situação não quero que o eixo horizontal tenha um medida coloque o numero 0, para o css entender que voce não quer medida para aquele eixo, nunca deixe só um medida sempre inserir as duas medidas mesmo sendo zero, se voce colacar somente um medida o css vai entender que esse medida é para os dois eixos*/
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-secundaria);
+    width: 80%; /*largura da sua estrutura */
+    text-align: center; /*alinha seu texto para o centro*/
+    font-weight: bold ;
+    border-radius: 8px; /*esse comando serve para voce criar bordas arredondadas no sua estrutura (nesse exemplo foi usado num retagulo e foi arredondados suas pontas*/
+    border: 2px solid var(--cor-terciaria); /*dimensões da borda da estrutura, nessa opção tem como editar a grossura, cor e formatção (tipo se o contorno ira ser trasejado, reto, 3D e etc.)*/
+    font-size: 1.25rem;
+    text-decoration: none; /*text decoration tira as decorações ja pre definidas do CSS, nesse exemplo quando voce criar um hiperlink de alguma palavra aparece um traço embaixo do mesmo porém quando voce usa esse codigo e escrever none, voce tira esse "decoração" da palavra*/
+}
+
+.apresentacao__midia:hover {
+    background: var(--hover-fundo);
+    color: var(--hover-cor-fonte);
+}
+
+.rodape {
+    padding: 24px;
+    font-family: var(--fonte-texto);
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-fonte-rodape);
+    background-color:var(--cor-fundo-rodape);
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
