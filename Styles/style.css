@@ -33,7 +33,7 @@ padding: 4% 7% 3% 7%; /*o 1° valor seria para o espaçamento do top, o 2° é p
 
 .cabecalho__menu {
     display: flex;
-    gap: 80px;
+    gap: 10%;
 }
 
 .cabecalho__menu__link {
@@ -45,15 +45,14 @@ padding: 4% 7% 3% 7%; /*o 1° valor seria para o espaçamento do top, o 2° é p
 }
 
 .apresentacao {
-    margin: 8% 7% 7% 7%; /*propriedade de editar o tamanho da margem da pagina web, sendo o 1° valor da lateral da pagina e o 2° Valor parte superior*/
+    margin: 8% 7% 7% 7%; /* propriedade de editar o tamanho da margem da pagina web, sendo o 1° valor da lateral da pagina e o 2° Valor parte superior. */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 3%;
 }
 
 .apresentacao__conteudo {
-    margin-right: 8%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -66,18 +65,18 @@ padding: 4% 7% 3% 7%; /*o 1° valor seria para o espaçamento do top, o 2° é p
     flex-direction: column;
 }
 
-.titulo-destaque {
-    color: var(--cor-terciaria);
-}
-
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
     font-family: var(--fonte-titulo);
     color: var(--titulo);   
 }
 
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
 .imagem__portfolio{
-    width: 45%;
+    width: 50%;
 }
 
 .apresentacao__conteudo__texto {
@@ -129,12 +128,12 @@ padding: 4% 7% 3% 7%; /*o 1° valor seria para o espaçamento do top, o 2° é p
     font-weight: 400;
     text-align: center;
     color: var(--cor-fonte-rodape);
-    background-color:var(--cor-fundo-rodape);
+    background-color: var(--cor-fundo-rodape);
 }
 
 @media (max-width: 1200px) {
     .cabecalho{
-        padding: 10%;
+        padding: 4% 7% 10% 7%; 
     }
 
     .cabecalho__menu{
@@ -142,11 +141,18 @@ padding: 4% 7% 3% 7%; /*o 1° valor seria para o espaçamento do top, o 2° é p
     }
 
     .apresentacao{
+        margin: auto;
         flex-direction: column-reverse;
-        padding: 5%;
+        padding: 2%;
     }
 
     .apresentacao__conteudo{
+        margin: 10% 0%;
         width: auto;
     }
+
+    .imagem__portfolio {
+        margin: 5% 0%;
+    }
 }
+
